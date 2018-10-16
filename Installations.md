@@ -43,8 +43,6 @@ Il est basé sur l'infrastructure DistBelief, initiée par Google en 2011, et es
 
 TensorFlow est l'un des outils les plus utilisés en IA dans le domaine de l'apprentissage machine." Wikipédia.
 
-## Installation
-
 Nous allons utiliser Anaconda pour l'installer. Il suffit de se placer dans l'environnement virtuel que l'on souhaite (pour nous `gt-deep-learning`) et utiliser la commande `conda install tensorflow`. Anaconda va ainsi rechercher les librairies nécessaires à l'utilisation de la librairie TensorFlow et les installer.
 
 Pour vérifier que TensorFlow est bien installé on peut exécuter le "Hello World" suivant (soit dans un fichier `.py`, soit directement dans un interpréteur python)
@@ -68,8 +66,6 @@ print(sess.run(hello))
 # Keras
 
 Keras est une autre librairie open source permettant de faire du deep learning. Elle se base sur TensorFlow et Theano (encore une autre librairie pour faire du deep learning). Elle a l'avantage d'être de plus haut-niveau, donc il est plus facile de créer de prototype de réseaux de neurones avec. Néanmoins, c'est aussi un inconvénient car on perd en flexibilité.
-
-## Installation
 
 Nous allons aussi utiliser Anaconda pour l'installer. Encore une fois, il suffit de se placer dans l'environnement virtuel que l'on souhaite (pour nous gt-deep-learning) et utiliser la commande `conda install keras`et Anaconda va installer le nécessaire.
 
@@ -104,8 +100,22 @@ model.summary()
     Using TensorFlow backend.
 
 
+# Jupyter
+
+Jupyter est une application web permettant de programmer dans plus de 40 langages de programmations, y compris python.
+Cela nous permet de lancer des **notebook** qui sont des pages webs permettant d'éxecuter des petits morceaux de codes écrits dans des **cellules**. 
+
+Nous allons l'installer grâce à Anaconda dans notre environnement virtuel. La commande d'installation est donc :
+> `conda install jupyter`
+
+Après l'installation, il nous suffit de lancer un "notebook server" grâce à la commande `jupyter notebook`. Cela nous ouvre une page web qui nous servira d'interface. De cette interface, on peut créer des notebooks, des fichiers python, textes, des terminaux etc.
+
+Quand on créé un notebook, cela nous ouvre une interface avec des cellules. On peut écrire des morceaux de codes dans celles-ci. Attention, toutes les variables, fonctions etc. que l'on créé dans une cellule est aussi disponible dans une autre.
+
 # Liens utiles
 
 Pour la documentation TensorFlow le site https://www.tensorflow.org/ est très complet. Il possède mêmes des tutoriels pour commencer le deep learning.
 
 Pour la documentation Keras le site https://keras.io/ est aussi pratique.
+
+Une vidéo d'introduction aux notebooks jupyter : https://www.youtube.com/watch?v=jZ952vChhuI
